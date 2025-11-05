@@ -1,0 +1,243 @@
+.micro-internship-card {
+  border: 1px solid #e1e5e9;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.micro-internship-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.micro-internship-card.open {
+  border-left: 4px solid #28a745;
+}
+
+.micro-internship-card.in-progress {
+  border-left: 4px solid #007bff;
+}
+
+.micro-internship-card.completed {
+  border-left: 4px solid #6c757d;
+}
+
+.card-header {
+  display: flex;
+  justify-content: between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.card-header h3 {
+  margin: 0;
+  flex: 1;
+  color: #2c3e50;
+  font-size: 1.25rem;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-badge.open {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-badge.in-progress {
+  background: #cce7ff;
+  color: #004085;
+}
+
+.status-badge.completed {
+  background: #e2e3e5;
+  color: #383d41;
+}
+
+.card-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.card-meta span {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  color: #495057;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.skill-tag {
+  background: #e9ecef;
+  color: #495057;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.deadline {
+  color: #dc3545;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.student-actions {
+  border-top: 1px solid #e9ecef;
+  padding-top: 15px;
+}
+
+.application-status {
+  padding: 8px 12px;
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 6px;
+  color: #856404;
+}
+
+.submission-status {
+  padding: 12px;
+  background: #d1ecf1;
+  border: 1px solid #bee5eb;
+  border-radius: 6px;
+  color: #0c5460;
+}
+
+.feedback {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #a6dcef;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+.btn-secondary {
+  background: #6c757d;
+  color: white;
+  margin-left: 8px;
+}
+
+.btn-secondary:hover {
+  background: #545b62;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #2c3e50;
+}
+
+.modal textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+/* Add these styles to your existing CSS file */
+
+.micro-internship-card.error {
+  border-left-color: #dc3545;
+  background: #f8d7da;
+}
+
+.micro-internship-card.error .error-message {
+  text-align: center;
+  padding: 20px;
+  color: #721c24;
+}
+
+/* Status badge styles for all possible statuses */
+.status-badge.open {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-badge.in-progress {
+  background: #cce7ff;
+  color: #004085;
+}
+
+.status-badge.completed {
+  background: #e2e3e5;
+  color: #383d41;
+}
+
+.status-badge.cancelled {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.status-badge.unknown {
+  background: #fff3cd;
+  color: #856404;
+}
