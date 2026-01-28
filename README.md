@@ -1,7 +1,6 @@
 # Career Mentorship Portal
 
-MERN stack (MongoDB, Express, React, Node.js) application. **No Tailwind** — plain CSS only.
-
+MERN stack (MongoDB, Express, React, Node.js) application.
 ## Modules
 
 1. **User Authentication & Profiles** – Login, signup, profile (skills, interests, experience), mentor–mentee linking
